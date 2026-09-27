@@ -1,26 +1,109 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------
+   Sunrise palette — peach & amber. Warm, hopeful, aimed at younger
+   readers. Deep navy + cream are pulled from the book covers.
+----------------------------------------------------------------*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fffaf3;
+  --foreground: #2a2018;
+
+  --cream: #fff7ee;
+  --peach: #ffd9b7;
+  --peach-deep: #ffbe8a;
+  --amber: #f4a340;
+  --amber-deep: #e07f2c;
+  --coral: #d9563f;
+  --coral-deep: #ab3c29;
+  --navy: #16305b;
+  --navy-soft: #24456f;
+  --leaf: #5c8a52;
+  --muted: #6f6152;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-cream: var(--cream);
+  --color-peach: var(--peach);
+  --color-peach-deep: var(--peach-deep);
+  --color-amber: var(--amber);
+  --color-amber-deep: var(--amber-deep);
+  --color-coral: var(--coral);
+  --color-coral-deep: var(--coral-deep);
+  --color-navy: var(--navy);
+  --color-navy-soft: var(--navy-soft);
+  --color-leaf: var(--leaf);
+  --color-muted: var(--muted);
+
+  --font-sans: var(--font-nunito);
+  --font-display: var(--font-fraunces);
+  --font-hand: var(--font-patrick);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Sunrise wash used behind the hero and the newsletter band */
+.sunrise-wash {
+  background:
+    radial-gradient(
+      120% 90% at 50% 0%,
+      #fff3df 0%,
+      #ffe4c4 38%,
+      #ffd0a3 66%,
+      #f9bb85 100%
+    );
+}
+
+/* Soft sun-ray burst, echoes the light behind the trees on the cover */
+.sun-rays {
+  background: conic-gradient(
+    from 0deg,
+    rgba(255, 255, 255, 0.55) 0deg 6deg,
+    transparent 6deg 18deg
+  );
+  mask-image: radial-gradient(circle, #000 0%, transparent 70%);
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--tilt, 0deg));
+  }
+  50% {
+    transform: translateY(-14px) rotate(var(--tilt, 0deg));
+  }
+}
+
+.float-soft {
+  animation: float-soft 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float-soft {
+    animation: none;
+  }
+}
+
+::selection {
+  background: var(--peach-deep);
+  color: var(--navy);
+}
+
+/* Playful tiled doodle field — sparkles, envelopes and hearts over the
+   sunrise gradient. Used where a photographic background would repeat
+   artwork already shown elsewhere on the site. */
+.doodle-field {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23eaa877' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M25 15 L27.5 22.5 L35 25 L27.5 27.5 L25 35 L22.5 27.5 L15 25 L22.5 22.5 Z'/%3E%3Cpath d='M72 28 h18 v13 h-18 Z M72 28 l9 7 l9 -7'/%3E%3Cpath d='M35 96 c-7-4.5-10.5-8-10.5-11.5 a4.6 4.6 0 0 1 10.5-2.3 a4.6 4.6 0 0 1 10.5 2.3 c0 3.5-3.5 7-10.5 11.5 Z'/%3E%3Cpath d='M86 78 L88 84 L94 86 L88 88 L86 94 L84 88 L78 86 L84 84 Z'/%3E%3Cpath d='M100 20 a3 3 0 1 0 0.1 0'/%3E%3Cpath d='M8 62 c6-6 12 6 18 0'/%3E%3C/g%3E%3C/svg%3E"),
+    radial-gradient(120% 100% at 50% 0%, #fff6ea 0%, #ffe6c9 45%, #ffd2a6 100%);
+  background-size:
+    120px 120px,
+    cover;
+  background-repeat: repeat, no-repeat;
 }

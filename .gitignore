@@ -40,5 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Newsletter subscribers (local CSV)
-data/
+# Newsletter subscribers (local CSV). Anchored to the repo root so it does
+# not also exclude app/data/, which holds source files.
+/data/

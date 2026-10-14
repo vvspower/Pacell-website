@@ -61,7 +61,7 @@ export default function BooksPage() {
         <SectionHeading
           eyebrow="The collection"
           title="All three books"
-          subtitle="Two out now and one on the way — follow Jordan from the day he arrives on Hart Street."
+          subtitle="Follow Jordan from the day he arrives on Hart Street to the choice that is his alone to make."
         />
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {books.map((book) => (
@@ -109,11 +109,20 @@ export default function BooksPage() {
         </div>
       </section>
 
-      <section className="sunrise-wash py-12 sm:py-16">
-        <div className="mx-auto max-w-3xl px-5 text-center">
-          <h2 className="font-display text-3xl font-semibold text-navy">
-            Hear about the next one first
+      {/* Envelope-and-sparkle pattern — it belongs on a sign-up block. */}
+      <section className="doodle-field relative isolate overflow-hidden py-14 sm:py-20">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute left-1/2 top-1/2 h-64 w-[40rem] max-w-[92vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cream/80 blur-3xl"
+        />
+        <div className="relative mx-auto max-w-3xl px-5 text-center">
+          <h2 className="font-display text-2xl font-semibold text-navy sm:text-3xl">
+            Be first to know when Book Three lands
           </h2>
+          <p className="mx-auto mt-3 max-w-md text-sm text-navy-soft">
+            Release news for Jordan Makes an Important Decision, straight to
+            your inbox.
+          </p>
           <div className="mt-7">
             <NewsletterForm />
           </div>

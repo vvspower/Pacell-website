@@ -63,8 +63,8 @@ export default function NewsletterBand() {
       <section id="newsletter" className="border-y border-peach-deep/40 bg-peach/30">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-5 px-5 py-7 text-center sm:gap-6 sm:py-8 md:flex-row md:justify-between md:gap-10 md:text-left">
           <p className="font-hand text-lg leading-snug tracking-wide text-navy-soft sm:text-xl md:text-2xl">
-            Want to hear about Book Three first? Join the newsletter for cover
-            reveals, release dates and stories from behind the pages.
+            Want to know the moment Book Three is out? Join the newsletter for
+            release news and stories from behind the pages.
           </p>
           <button
             type="button"
@@ -130,7 +130,7 @@ export default function NewsletterBand() {
                   Join the newsletter
                 </h2>
                 <p className="mt-2 text-sm text-muted">
-                  Cover reveals and release news. No noise — just good news.
+                  Release news and stories from behind the pages. No noise.
                 </p>
 
                 <form onSubmit={handleSubmit} className="mt-6 space-y-3">

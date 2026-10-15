@@ -9,21 +9,21 @@ import HeroBackground from "./components/HeroBackground";
 const values = [
   {
     title: "Courage",
-    body: "Ordinary kids choosing the brave, kind thing, even when the hallway goes quiet.",
+    body: "Helping children discover the courage to do what is right, stand up for others, and choose kindness even when doing so is difficult.",
     icon: "/icon-courage.png",
     width: 117,
     height: 158,
   },
   {
     title: "Friendship",
-    body: "Tables with room for one more, and friends who show up before they're asked.",
+    body: "Stories that celebrate the gift of friendship, the importance of including others, and the difference a little kindness can make in someone's life.",
     icon: "/icon-friendship.png",
     width: 128,
     height: 99,
   },
   {
     title: "Faith",
-    body: "Quiet, lived-in faith that shows up in choices rather than in lectures.",
+    body: "Gentle reminders that Jesus loves every child, no matter what, and that faith can guide the choices they make, the way they treat others, and how they face life's challenges.",
     icon: "/icon-faith.png",
     width: 169,
     height: 100,
@@ -79,8 +79,8 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 py-12 sm:py-16">
         <SectionHeading
           eyebrow="Christian Fiction · Christian Contemporary"
-          title="What you'll find in these books"
-          subtitle="Books for young readers about growing up, showing up, and holding on to hope, written by Pacell McCobb."
+          title="Stories That Grow Hearts and Strengthen Faith"
+          subtitle="Christian stories for young readers about growing in faith, choosing kindness, finding courage, and discovering that hope is never out of reach."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-3">

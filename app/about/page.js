@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AUTHOR } from "../data/books";
-import SectionHeading from "../components/SectionHeading";
 
 export const metadata = {
   title: "About",
@@ -69,40 +68,35 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-5 text-base leading-relaxed text-muted">
-            <SectionHeading align="left" title="The short version" />
             <p>
-              I write warm, hopeful Christian fiction for young readers. My
-              stories live in the ordinary places where character is actually
-              formed: school hallways, back gardens, kitchen tables, the walk
-              home.
+              Pacell McCobb is a Christian children&apos;s author who writes
+              fictional stories inspired by real-life experiences and everyday
+              situations children may face. Through her storytelling, she
+              explores themes of faith, friendship, kindness, courage,
+              forgiveness, and standing up for what is right.
             </p>
             <p>
-              The Meeting the Allens series follows Jordan, a boy who arrives
-              somewhere new and finds a family willing to make room for him. Over
-              three books he learns what it costs to speak up, what forgiveness
-              looks like when it isn&apos;t easy, and how friendship holds
-              steady through both.
+              Her Meeting the Allens on Hart Street series follows Jordan and
+              his friends as they navigate new experiences, face challenges,
+              build meaningful relationships, and discover the importance of
+              making choices guided by faith and strong values.
             </p>
             <p>
-              I believe children&apos;s stories should be gentle without being
-              soft, and faithful without being preachy. Kids can carry real
-              questions. They just want to carry them alongside someone who
-              believes things turn out okay.
+              Pacell believes that children&apos;s stories can do more than
+              entertain; they can encourage young readers to think, grow, and
+              see how God&apos;s love can guide them through life&apos;s
+              challenges. Her hope is that every story reminds children that
+              they are loved by God, that their choices matter, and that they
+              can always turn to Him for guidance, comfort, and strength.
             </p>
+            <p>Part of her writing is guided by the words of Romans 12:21 (KJV):</p>
 
             <div className="rounded-3xl border border-peach-deep/50 bg-cream p-6 sm:p-7">
               <p className="font-display text-xl italic leading-relaxed text-navy">
-                “Do not be overcome by evil, but overcome evil with good.”
+                “Be not overcome of evil, but overcome evil with good.”
               </p>
-              <p className="mt-2 text-sm text-muted">Romans 12:21</p>
+              <p className="mt-2 text-sm text-muted">Romans 12:21 (KJV)</p>
             </div>
-
-            <p>
-              When I&apos;m not writing, I&apos;m usually reading something far
-              too long, walking somewhere with no particular destination, or
-              talking with young readers about the parts of the story they would
-              have written differently.
-            </p>
 
             <div className="flex flex-wrap gap-3 pt-3">
               <Link

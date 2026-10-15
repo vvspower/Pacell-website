@@ -17,11 +17,11 @@ const slides = [
     },
   },
   {
-    src: "/pacel=hero-section2.png",
-    alt: "A group of friends walking to school together on a sunny morning",
+    src: "/pacel=hero-section2-new.png",
+    alt: "Jordan and his friends walking to school together on a sunny morning, arms around each other's shoulders",
     position: "object-[20%_center] lg:object-[32%_center]",
     phone: {
-      src: "/pacel=hero-section2-phone.png",
+      src: "/pacel=hero-section2-phone-new.png",
       position: "object-[center_top]",
     },
   },

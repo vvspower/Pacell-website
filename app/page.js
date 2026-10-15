@@ -44,8 +44,9 @@ export default function Home() {
             <p className="text-xs font-bold uppercase tracking-[0.28em] text-coral">
               Christian Fiction for Young Readers
             </p>
-            <h1 className="mt-3 font-display text-[1.9rem] font-semibold leading-tight text-navy sm:text-5xl xl:text-6xl">
-              Stories with room at the table
+            <h1 className="mt-3 font-display text-[1.6rem] font-semibold leading-snug text-navy sm:text-4xl xl:text-5xl">
+              Stories of God&apos;s character and love reflected through actions
+              and words.
             </h1>
             <p className="mt-4 text-sm leading-relaxed text-navy-soft sm:mt-5 sm:text-base xl:text-lg">
               The Meeting the Allens series follows Jordan and the friends next

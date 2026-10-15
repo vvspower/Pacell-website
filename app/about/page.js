@@ -9,7 +9,7 @@ export const metadata = {
 
 const facts = [
   { label: "Writes", value: "Christian Fiction & Contemporary" },
-  { label: "Readers", value: "Ages 8–13 and the grown-ups who read along" },
+  { label: "Readers", value: "Ages 7–14 and the grown-ups who read along" },
   { label: "Series", value: "Meeting the Allens, three books" },
 ];
 

@@ -46,14 +46,19 @@ export default function BookShowcase({ book, flipped = false }) {
         <p className="text-xs font-bold uppercase tracking-[0.25em] text-amber-deep">
           Book {book.number}
         </p>
-        <p className="mt-3 text-base leading-relaxed text-muted sm:text-lg">
-          <em className="font-display text-xl font-semibold not-italic text-coral">
-            {book.title}
-          </em>{": "}
-          {book.blurb}
+        <p className="mt-3 font-display text-xl font-semibold text-coral">
+          {book.title}
         </p>
+        {book.blurb.map((paragraph) => (
+          <p
+            key={paragraph}
+            className="mt-3 text-base leading-relaxed text-muted sm:text-lg"
+          >
+            {paragraph}
+          </p>
+        ))}
         <p className="mt-3 text-sm text-muted">
-          For readers ages 8–13, and the grown-ups reading along.
+          For readers ages 7–14, and the grown-ups reading along.
         </p>
 
         <div className="mt-7">

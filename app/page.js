@@ -150,9 +150,9 @@ export default function Home() {
       {/* Wide 3:1 artwork, so it can run edge to edge without towering. */}
       <section className="w-full">
         <Image
-          src="/jesus_quote.png"
-          alt="With Jesus as his guide, Jordan learns to welcome others, stand up for what is right, and grow strong in faith."
-          width={2172}
+          src="/jesus-quote-new.png"
+          alt="As Jordan discovers the power of Jesus' love, he begins to understand the importance of kindness, acceptance, and choosing to do what is right."
+          width={2171}
           height={724}
           sizes="100vw"
           className="w-full"

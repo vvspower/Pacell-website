@@ -18,7 +18,7 @@ const details = [
   },
   {
     title: "Who are they for?",
-    body: "Written for readers aged 8 to 13, at a reading level that suits confident solo readers and works just as well read aloud a chapter at a time.",
+    body: "Written for readers aged 7 to 14, at a reading level that suits confident solo readers and works just as well read aloud a chapter at a time.",
   },
   {
     title: "What are they about?",
@@ -52,7 +52,7 @@ export default function BooksPage() {
           </h1>
           <p className="mt-4 text-base text-navy-soft sm:text-lg">
             A three-book series about courage, friendship and quiet faith,
-            written for readers aged 8 to 13.
+            written for readers aged 7 to 14.
           </p>
         </div>
       </section>

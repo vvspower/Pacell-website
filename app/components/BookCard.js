@@ -34,9 +34,11 @@ export default function BookCard({ book }) {
         <p className="mt-1 text-sm font-semibold text-amber-deep">
           {book.tagline}
         </p>
-        <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
-          {book.blurb}
-        </p>
+        <div className="mt-3 flex-1 space-y-2 text-sm leading-relaxed text-muted">
+          {book.blurb.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
 
         <div className="mt-5">
           {book.comingSoon ? (

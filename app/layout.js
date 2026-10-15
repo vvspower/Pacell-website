@@ -24,7 +24,7 @@ const patrickHand = Patrick_Hand({
 
 export const metadata = {
   title: {
-    default: "Pacell McCobb — Christian Fiction for Young Readers",
+    default: "Pacell McCobb · Christian Fiction for Young Readers",
     template: "%s · Pacell McCobb",
   },
   description:

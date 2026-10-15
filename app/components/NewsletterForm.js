@@ -36,7 +36,7 @@ export default function NewsletterForm({ compact = false }) {
   if (done) {
     return (
       <p className="font-display text-lg text-navy">
-        Thank you — you&apos;re on the list. 🌅
+        Thank you, you&apos;re on the list. 🌅
       </p>
     );
   }

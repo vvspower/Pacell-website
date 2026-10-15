@@ -32,7 +32,7 @@ export const books = [
     title: "Jordan Makes an Important Decision",
     tagline: "Some choices you make for yourself.",
     blurb:
-      "Jordan has learned to welcome others and to stand up for what is right. Now comes the choice that is his alone to make — with his family, the Allens and the whole gang beside him. Book three brings the series home.",
+      "Jordan has learned to welcome others and to stand up for what is right. Now comes the choice that is his alone to make, with his family, the Allens and the whole gang beside him. Book three brings the series home.",
     cover: "/book3-cover.png",
     comingSoon: true,
     buyUrl: null,

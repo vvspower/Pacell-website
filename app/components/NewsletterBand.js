@@ -49,8 +49,8 @@ export default function NewsletterBand() {
       setStatus("done");
       setMessage(
         data.alreadySubscribed
-          ? "You're already on the list — thank you!"
-          : "Thank you — you're on the list.",
+          ? "You're already on the list. Thank you!"
+          : "Thank you, you're on the list.",
       );
     } catch {
       setStatus("error");

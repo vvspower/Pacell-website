@@ -49,8 +49,8 @@ export default function BookShowcase({ book, flipped = false }) {
         <p className="mt-3 text-base leading-relaxed text-muted sm:text-lg">
           <em className="font-display text-xl font-semibold not-italic text-coral">
             {book.title}
-          </em>{" "}
-          — {book.blurb}
+          </em>{": "}
+          {book.blurb}
         </p>
         <p className="mt-3 text-sm text-muted">
           For readers ages 8–13, and the grown-ups reading along.

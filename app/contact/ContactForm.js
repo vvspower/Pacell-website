@@ -19,7 +19,7 @@ export default function ContactForm() {
     return (
       <div className="grid place-items-center rounded-3xl border border-peach-deep/50 bg-cream p-10 text-center">
         <p className="font-display text-2xl font-semibold text-navy">
-          Message sent — thank you!
+          Message sent. Thank you!
         </p>
         <p className="mt-2 text-sm text-muted">
           I&apos;ll get back to you as soon as I can.

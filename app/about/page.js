@@ -11,7 +11,7 @@ export const metadata = {
 const facts = [
   { label: "Writes", value: "Christian Fiction & Contemporary" },
   { label: "Readers", value: "Ages 8–13 and the grown-ups who read along" },
-  { label: "Series", value: "Meeting the Allens — three books" },
+  { label: "Series", value: "Meeting the Allens, three books" },
 ];
 
 export default function AboutPage() {
@@ -21,7 +21,7 @@ export default function AboutPage() {
           is kept for screen readers and search engines. */}
       <section className="w-full">
         <h1 className="sr-only">
-          About the author: {AUTHOR.name} — {AUTHOR.role}
+          About the author: {AUTHOR.name}, {AUTHOR.role}
         </h1>
         <Image
           src="/about-hero-mobile.png"
@@ -73,7 +73,7 @@ export default function AboutPage() {
             <p>
               I write warm, hopeful Christian fiction for young readers. My
               stories live in the ordinary places where character is actually
-              formed — school hallways, back gardens, kitchen tables, the walk
+              formed: school hallways, back gardens, kitchen tables, the walk
               home.
             </p>
             <p>
@@ -86,7 +86,7 @@ export default function AboutPage() {
             <p>
               I believe children&apos;s stories should be gentle without being
               soft, and faithful without being preachy. Kids can carry real
-              questions — they just want to carry them alongside someone who
+              questions. They just want to carry them alongside someone who
               believes things turn out okay.
             </p>
 

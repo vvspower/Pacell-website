@@ -8,13 +8,13 @@ import NewsletterForm from "../components/NewsletterForm";
 export const metadata = {
   title: "Books",
   description:
-    "The Meeting the Allens series — Christian fiction for young readers by Pacell McCobb.",
+    "The Meeting the Allens series: Christian fiction for young readers by Pacell McCobb.",
 };
 
 const details = [
   {
     title: "Do they need to be read in order?",
-    body: "Each book stands on its own, but Jordan's story builds across the series — starting with Meeting the Allens on Hart Street gives the friendships their full weight.",
+    body: "Each book stands on its own, but Jordan's story builds across the series. Starting with Meeting the Allens on Hart Street gives the friendships their full weight.",
   },
   {
     title: "Who are they for?",
@@ -22,11 +22,11 @@ const details = [
   },
   {
     title: "What are they about?",
-    body: "Courage, forgiveness and friendship, set in ordinary places — a new street, a school hallway, a kitchen table. Faith is lived rather than preached.",
+    body: "Courage, forgiveness and friendship, set in ordinary places: a new street, a school hallway, a kitchen table. Faith is lived rather than preached.",
   },
   {
     title: "Is it suitable for the classroom?",
-    body: "Yes — the stories deal with being the new kid, unkindness between classmates and making things right, which tend to spark good discussion in a group.",
+    body: "Yes. The stories deal with being the new kid, unkindness between classmates and making things right, which tend to spark good discussion in a group.",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function BooksPage() {
             Meeting the Allens
           </h1>
           <p className="mt-4 text-base text-navy-soft sm:text-lg">
-            A three-book series about courage, friendship and quiet faith —
+            A three-book series about courage, friendship and quiet faith,
             written for readers aged 8 to 13.
           </p>
         </div>

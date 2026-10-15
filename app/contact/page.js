@@ -2,7 +2,8 @@ import ContactForm from "./ContactForm";
 
 export const metadata = {
   title: "Contact",
-  description: "Get in touch with Pacell McCobb — school visits, book clubs, and reader mail.",
+  description:
+    "Get in touch with Pacell McCobb about school visits, book clubs, and reader mail.",
 };
 
 const reasons = [
@@ -120,7 +121,7 @@ export default function ContactPage() {
 
           <p className="mx-auto mt-6 max-w-xl text-base text-navy-soft sm:text-lg">
             Whether it&apos;s a school visit, a book club, or a note from a
-            reader — I&apos;d love to hear from you.
+            reader, I&apos;d love to hear from you.
           </p>
 
           {/* Little sticker row: sets expectations and adds some bounce. */}

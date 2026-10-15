@@ -9,7 +9,7 @@ import HeroBackground from "./components/HeroBackground";
 const values = [
   {
     title: "Courage",
-    body: "Ordinary kids choosing the brave, kind thing — even when the hallway goes quiet.",
+    body: "Ordinary kids choosing the brave, kind thing, even when the hallway goes quiet.",
     icon: "/icon-courage.png",
     width: 117,
     height: 158,
@@ -80,7 +80,7 @@ export default function Home() {
         <SectionHeading
           eyebrow="Christian Fiction · Christian Contemporary"
           title="What you'll find in these books"
-          subtitle="Books for young readers about growing up, showing up, and holding on to hope — written by Pacell McCobb."
+          subtitle="Books for young readers about growing up, showing up, and holding on to hope, written by Pacell McCobb."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-3">

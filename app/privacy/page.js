@@ -11,7 +11,7 @@ export default function PrivacyPage() {
       </h1>
       <div className="mt-8 space-y-5 text-base leading-relaxed text-muted">
         <p>
-          This site collects only the information you choose to give — your name
+          This site collects only the information you choose to give: your name
           and email address when you write to me or join the newsletter.
         </p>
         <p>

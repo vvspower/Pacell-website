@@ -35,7 +35,7 @@ export default function BooksPage() {
     <>
       <section className="relative isolate flex min-h-[18rem] items-center overflow-hidden bg-cream py-14 text-center sm:min-h-[24rem] sm:py-20">
         <Image
-          src="/books-hero.png"
+          src="/books-hero-new.png"
           alt=""
           aria-hidden="true"
           fill

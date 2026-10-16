@@ -95,7 +95,7 @@ export default function AboutPage() {
               <p className="font-display text-xl italic leading-relaxed text-navy">
                 “Be not overcome of evil, but overcome evil with good.”
               </p>
-              <p className="mt-2 text-sm text-muted">Romans 12:21 (KJV)</p>
+              {/* <p className="mt-2 text-sm text-muted">Romans 12:21 (KJV)</p> */}
             </div>
 
             <div className="flex flex-wrap gap-3 pt-3">

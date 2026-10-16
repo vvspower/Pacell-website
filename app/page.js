@@ -79,8 +79,8 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 py-12 sm:py-16">
         <SectionHeading
           eyebrow="Christian Fiction · Christian Contemporary"
-          title="Stories That Grow Hearts and Strengthen Faith"
-          subtitle="Christian stories for young readers about growing in faith, choosing kindness, finding courage, and discovering that hope is never out of reach."
+          title="Journeys That Grow Hearts and Strengthen Faith"
+          subtitle="Adventures for young readers about growing in faith, choosing kindness, finding courage, and discovering that hope is never out of reach."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-3">

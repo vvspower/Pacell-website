@@ -10,7 +10,6 @@ export const books = [
     tagline: "The day everything changed for Jordan.",
     blurb: [
       "When the Allen family moves to Hart Street, Jordan is eager to meet his new neighbors. But when his friends' opinions challenge what he believes, Jordan must learn the importance of looking beyond what others say and choosing kindness over prejudice.",
-      "The first book in the Meeting the Allens series is a heartwarming Christian story about friendship, courage, and overcoming evil with good.",
     ],
     cover: "/book1-cover.png",
     comingSoon: false,

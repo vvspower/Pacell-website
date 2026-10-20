@@ -37,3 +37,18 @@ Excel: **File > Download > Microsoft Excel (.xlsx)**.
 
 Use **Deploy > Manage deployments > Edit > New version**, otherwise the live
 URL keeps running the old code.
+
+## Email notifications for the contact form
+
+Each contact message is also emailed to the site owner from a mailbox on
+evercrestpublishingcompany.com. Add these variables (`.env.local` and Vercel):
+
+```
+SMTP_HOST=<your mail server, e.g. smtp.gmail.com or mail.evercrestpublishingcompany.com>
+SMTP_PORT=465
+SMTP_USER=<mailbox login, e.g. website@evercrestpublishingcompany.com>
+SMTP_PASS=<that mailbox's password or app password>
+CONTACT_TO_EMAIL=<the client's email address>
+```
+
+Optional: `CONTACT_FROM_EMAIL` if the sender address differs from `SMTP_USER`.

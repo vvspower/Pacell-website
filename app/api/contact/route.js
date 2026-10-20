@@ -1,4 +1,5 @@
 import { addRow } from "../../lib/sheet";
+import { sendContactEmail } from "../../lib/mail";
 
 const clean = (value, max) =>
   typeof value === "string" ? value.trim().slice(0, max) : "";
@@ -23,20 +24,22 @@ export async function POST(request) {
     );
   }
 
-  try {
-    await addRow("Contact", [
-      new Date().toISOString(),
-      name,
-      email,
-      subject,
-      message,
-    ]);
-    return Response.json({ ok: true });
-  } catch (err) {
-    console.error("[contact]", err.message);
+  // Save to the sheet and email the owner. The visitor sees an error only if
+  // both fail, so a message is never lost silently.
+  const [saved, emailed] = await Promise.allSettled([
+    addRow("Contact", [new Date().toISOString(), name, email, subject, message]),
+    sendContactEmail({ name, email, subject, message }),
+  ]);
+
+  if (saved.status === "rejected") console.error("[contact:sheet]", saved.reason?.message);
+  if (emailed.status === "rejected") console.error("[contact:email]", emailed.reason?.message);
+
+  if (saved.status === "rejected" && emailed.status === "rejected") {
     return Response.json(
       { error: "Could not send your message. Please try again." },
       { status: 500 },
     );
   }
+
+  return Response.json({ ok: true });
 }

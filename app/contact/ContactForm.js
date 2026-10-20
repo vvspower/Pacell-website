@@ -7,12 +7,33 @@ const field =
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
 
-  // No backend wired up yet — point this at a form service or a route
-  // handler when one exists.
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
-    setSent(true);
+    const form = event.currentTarget;
+    setSending(true);
+    setError("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        setError(data.error ?? "Something went wrong.");
+      } else {
+        setSent(true);
+      }
+    } catch {
+      setError("Could not send your message. Please try again.");
+    } finally {
+      setSending(false);
+    }
   }
 
   if (sent) {
@@ -74,11 +95,17 @@ export default function ContactForm() {
           className={`mt-1.5 ${field}`}
         />
       </div>
+      {error && (
+        <p role="alert" className="text-sm font-semibold text-coral">
+          {error}
+        </p>
+      )}
       <button
         type="submit"
-        className="w-full rounded-full bg-coral px-6 py-3 font-bold text-cream shadow-sm transition-transform hover:-translate-y-0.5"
+        disabled={sending}
+        className="w-full rounded-full bg-coral px-6 py-3 font-bold text-cream shadow-sm transition-transform hover:-translate-y-0.5 disabled:opacity-60"
       >
-        Send message
+        {sending ? "Sending..." : "Send message"}
       </button>
     </form>
   );

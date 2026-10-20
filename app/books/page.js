@@ -60,8 +60,8 @@ export default function BooksPage() {
       <section className="mx-auto max-w-6xl px-5 py-12 sm:py-16">
         <SectionHeading
           eyebrow="The collection"
-          title="All three books"
-          subtitle="Follow Jordan from the day he arrives on Hart Street to the choice that is his alone to make."
+          title="All books"
+          subtitle="Follow Jordan from the day the Allens arrive on Hart Street to the choice that is his to make alone."
         />
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {books.map((book) => (

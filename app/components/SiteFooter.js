@@ -26,7 +26,7 @@ const socials = [
   },
   {
     label: "Email",
-    href: "mailto:hello@pacellmccobb.com",
+    href: "mailto:pacellm@yahoo.com",
     path: "M2 5h16v10H2z M2 5l8 6 8-6",
   },
 ];

@@ -159,10 +159,10 @@ export default function ContactPage() {
             <p className="text-sm text-muted">
               Prefer email?{" "}
               <a
-                href="mailto:hello@pacellmccobb.com"
+                href="mailto:pacellm@yahoo.com"
                 className="font-semibold text-coral hover:underline"
               >
-                hello@pacellmccobb.com
+                pacellm@yahoo.com
               </a>
             </p>
           </div>

@@ -14,19 +14,19 @@ export const metadata = {
 const details = [
   {
     title: "Do they need to be read in order?",
-    body: "Each book stands on its own, but Jordan's story builds across the series. Starting with Meeting the Allens on Hart Street gives the friendships their full weight.",
+    body: "Each book can be enjoyed on its own, but Jordan's story continues to unfold throughout the series. For the fullest experience, I recommend starting with Meeting the Allens on Hart Street to appreciate how the friendships begin and develop over time.",
   },
   {
-    title: "Who are they for?",
-    body: "Written for readers aged 7 to 14, at a reading level that suits confident solo readers and works just as well read aloud a chapter at a time.",
+    title: "What are the books about?",
+    body: "These stories explore courage, forgiveness, friendship, and faith in everyday situations. From the Allens settling into a new neighborhood to children learning to stand up for what is right, each story reflects God's love through kindness, compassion, and the choices we make.",
   },
   {
-    title: "What are they about?",
-    body: "Courage, forgiveness and friendship, set in ordinary places: a new street, a school hallway, a kitchen table. Faith is lived rather than preached.",
+    title: "Who are the books for?",
+    body: "Written for readers ages 7–14, these books are suitable for confident independent readers and are equally enjoyable when read aloud with a parent, teacher, or caregiver.",
   },
   {
-    title: "Is it suitable for the classroom?",
-    body: "Yes. The stories deal with being the new kid, unkindness between classmates and making things right, which tend to spark good discussion in a group.",
+    title: "Are the books suitable for the classroom?",
+    body: "Yes! The stories explore relatable childhood experiences, including bullying, unkindness between classmates, standing together, and making things right. They encourage children to think about the importance of friendship, treating others with kindness, and how standing together can make a difference. These themes also provide meaningful opportunities for classroom discussions and group activities.",
   },
 ];
 
@@ -96,8 +96,9 @@ export default function BooksPage() {
 
           <div className="mt-8 flex flex-col items-center gap-4 rounded-3xl bg-peach/30 p-6 text-center sm:flex-row sm:justify-between sm:text-left">
             <p className="text-sm leading-relaxed text-navy-soft">
-              Planning a class set, a school visit or a book club? I&apos;m
-              happy to help with discussion questions and signed bookplates.
+              Ordering books for your classroom, planning a book club, or
+              interested in a school visit? I&apos;d love to help with
+              discussion questions and signed copies!
             </p>
             <Link
               href="/contact"
